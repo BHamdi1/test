@@ -24,6 +24,17 @@ When, And('I click on the button {string}', (buttonName) => {
     TestPage.clickOnButton(BUTTON_ID)
 });
 
+When('I double click on the button {string}', (buttonName) => {
+    let BUTTON_ID = "";
+    switch(buttonName){
+        case "Button Click": 
+            BUTTON_ID = '#buttonClick';
+            break;
+    }
+    BUTTON_ID = "#buttonDblClick"
+    TestPage.doubleClickOnButton(BUTTON_ID)
+});
+
 When('I move the mouse over the button {string}', (buttonName) => {
     let BUTTON_ID = ""
     switch(buttonName){
@@ -41,7 +52,7 @@ Then('I must see that the message {string} is displayed', (message) => {
             MESSAGE_ID = '#buttonClickMsg';
             break;
         case "DblClick Done": 
-            MESSAGE_ID = '#buttonDbClickMsg';
+            MESSAGE_ID = '#buttonDblClickMsg';
             break;
         case "MouseOver Done":
             MESSAGE_ID = '#buttonMouseOverMsg';

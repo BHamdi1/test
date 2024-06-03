@@ -13,6 +13,10 @@ export default {
         cy.get(buttonId).click({force:true})
     },
 
+    doubleClickOnButton(buttonId) {
+        cy.get(buttonId).dblclick({force:true})
+    },
+
     isClickDoneMessageDisplayed(messageID) {
         return cy.get(messageID).should('be.visible')
     },

@@ -9,7 +9,7 @@ Feature: Test cypress
     @scenario2
     Scenario: DblClick Done
         Given I navigate to the page: "https://testingwithclarity.com/ClarityTestPage/ClarityTestPage.html"
-        When I click on the button "Button DblClick"
+        When I double click on the button "Button DblClick"
         Then I must see that the message "DblClick Done" is displayed
 
     @scenario3
