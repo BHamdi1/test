@@ -1,0 +1,9 @@
+node_modules
+allure-results
+cypress/screenshots
+cypress/downloads
+cypress/cucumber-json
+log
+package-lock.json
+/target/allure-report/
+/reports/

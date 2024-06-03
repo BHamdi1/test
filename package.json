@@ -1,0 +1,48 @@
+{
+  "name": "Test technique cypress",
+  "version": "1.0.0",
+  "description": "Test technique cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --spec \"**/*.feature\"",
+    "test:all": "cypress run --spec \"**/*.features\"",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BHamdi1/test.git"
+  },
+  "author": "Bassem Hamdi",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^1.4.0",
+    "@shelex/cypress-allure-plugin": "^2.37.0",
+    "allure-commandline": "^2.21.0",
+    "browserstack-cypress-cli": "^1.22.0",
+    "browserstacklocal": "0.0.4",
+    "chrome-remote-interface": "^0.29.0",
+    "common-tags": "^1.8.0",
+    "cypress": "^9.7.0",
+    "cypress-commands": "^1.1.0",
+    "cypress-cucumber-preprocessor": "^2.5.0",
+    "cypress-delete-downloads-folder": "0.0.2",
+    "cypress-file-upload": "^4.1.1",
+    "cypress-wait-until": "^1.7.2",
+    "fs-extra": "^9.0.1",
+    "multiple-cucumber-html-reporter": "^3.4.0",
+    "neat-csv": "^5.2.0",
+    "path": "^0.12.7"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "cypress-tags": "^1.2.2"
+  }
+}

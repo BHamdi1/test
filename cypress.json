@@ -1,0 +1,14 @@
+{
+    "baseUrl": "https://testingwithclarity.com/ClarityTestPage/ClarityTestPage.html",
+    "env": {
+    },
+    "pageLoadTimeout": 120000,
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 10000,
+    "video": false,
+    "ignoreTestFiles": ["*.js", "*.md"],
+    "testFiles": "**/*.{feature,features}",
+    "videoUploadOnPasses": false
+}
